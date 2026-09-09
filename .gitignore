@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+
+# Generated reports, plots, and prediction files
+*.pdf
+*.png
+*.npy
+figures/
+figs/
