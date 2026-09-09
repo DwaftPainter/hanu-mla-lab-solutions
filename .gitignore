@@ -9,3 +9,6 @@ __pycache__/
 *.npy
 figures/
 figs/
+
+# Local submission metadata may contain student identity information
+mla-report-config.json

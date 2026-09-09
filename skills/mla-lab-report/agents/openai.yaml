@@ -1,0 +1,4 @@
+interface:
+  display_name: "MLA Lab Report"
+  short_description: "Prepare weekly MLA lab PDF submissions"
+  default_prompt: "Use $mla-lab-report to prepare this week’s MLA lab submission from the instruction PDF and notebooks."
