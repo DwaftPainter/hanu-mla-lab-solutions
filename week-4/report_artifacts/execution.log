@@ -1,0 +1,62 @@
+CELL 3
+
+CELL 5
+p = [0.1192 0.2689 0.7311 0.8808]
+J = 0.2201
+
+CELL 8
+gradient = [-0.     -0.2537]
+w after one step = [0.     1.1268]
+cost after one step = 0.1903
+
+CELL 11
+class balance (fraction correct): 0.676
+train / val / test sizes: 2400 800 800
+
+CELL 13
+weights [bias, ability, difficulty, practice]: [ 1.2662  1.4603 -1.5789  0.4688]
+train accuracy: 0.812
+training cost, first / last epoch: 0.6632 0.4042
+
+CELL 16
+Batch (all): final loss = 0.4282; updates/epoch = 1
+Mini-batch (32): final loss = 0.4049; updates/epoch = 75
+SGD (1): final loss = 0.4171; updates/epoch = 2400
+
+CELL 18
+alpha = 0.01: first loss = 0.6921, final loss = 0.5981
+alpha = 0.1: first loss = 0.6829, final loss = 0.4288
+alpha = 1: first loss = 0.6018, final loss = 0.4042
+alpha = 3: first loss = 0.4841, final loss = 0.4042
+alpha = 30: first loss = 0.7357, final loss = 1.1231
+
+CELL 21
+sklearn weights   : [ 1.2828  1.4812 -1.6013  0.476 ]
+from-scratch       : [ 1.2662  1.4603 -1.5789  0.4688]
+sklearn val acc    : 0.816
+from-scratch val ac: 0.815
+
+CELL 23
+TP=496, FP=77, FN=58, TN=169
+Confusion matrix (rows=true, columns=predicted; order=[0, 1]):
+[[169  77]
+ [ 58 496]]
+Accuracy: 0.8313
+Precision (correct class): 0.8656
+Recall (correct class): 0.8953
+F1 (correct class): 0.8802
+Always-correct baseline accuracy: 0.6925
+Wrong-answer recall: 0.6870 (baseline: 0.0000)
+
+CELL 26
+
+CELL 28
+
+A probability near 0.5 indicates that the model is uncertain, making the
+attempt a useful candidate for teacher review rather than a confident
+automatic decision. Its usefulness depends on calibration and the teacher's
+review goals; the score is an estimate for an attempt, not a judgment of the
+student's ability or worth. If a wrong-answer flag automatically determined
+a grade, a false flag could penalize a correct response and unfairly lower
+the student's mark, so a teacher should check the actual work.
+

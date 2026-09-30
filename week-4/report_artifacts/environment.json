@@ -1,0 +1,7 @@
+{
+  "python": "3.14.7",
+  "numpy": "2.5.2",
+  "matplotlib": "3.11.1",
+  "scikit-learn": "1.9.0",
+  "execution": "Code cells executed sequentially in a fresh namespace using the Agg plot backend; original notebook unchanged."
+}
